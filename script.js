@@ -30,10 +30,18 @@ function wishMe(){
 
 }
 
-window.addEventListener('load', ()=>{
-    speak("Initializing JARVIS..");
+// window.addEventListener('load', ()=>{
+//     speak("Initializing JARVIS..");
+//     wishMe();
+// });
+
+window.addEventListener('load', () => {
+  document.body.addEventListener('click', () => {
+    speak("Initializing JARVIS...");
     wishMe();
+  }, { once: true });
 });
+
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
