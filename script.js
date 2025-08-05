@@ -37,7 +37,7 @@ function wishMe(){
 
 window.addEventListener('load', () => {
   document.body.addEventListener('click', () => {
-    speak("Initializing JARVIS...");
+    speak("Initializing RUDRA...");
     wishMe();
   }, { once: true });
 });
